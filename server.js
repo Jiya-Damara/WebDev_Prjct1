@@ -4,9 +4,9 @@
 var express = require('express'); // imports express.js 
 var app = express(); // 
 
-var port = 8080;
+var port = 80;
 
-app.use(express.static('public')); // koi bhi request aagi of type static, the server will look for the result in the 'public' directory
+app.use(express.static('frontend')); // koi bhi request aagi of type static, the server will look for the result in the 'frontend' directory
 
 // agar listen is successful then callback fnc is executed
 app.listen(port, function() {  // callback fnc andar wala 
